@@ -1,0 +1,58 @@
+/* AdminDashboard.module.css */
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Takes full vertical space */
+  background-color: #f9f9f9; /* Light background */
+  padding: 20px;
+}
+
+.logoContainer .companyLogo{
+  width: 200px;
+  height: 200px;
+}
+
+.dashboardHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; /* Dark heading */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between links */
+}
+
+.dashboardLink {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff; /* White text */
+  background-color: #6f6f6f; /* Blue background */
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 350px;
+}
+
+.dashboardLink:hover {
+  background-color: #414141; /* Darker blue on hover */
+  color: white;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .linkContainer {
+    flex-direction: row; /* Horizontal links on larger screens */
+  }
+
+  .dashboardLink {
+    padding: 20px 40px; /* Larger padding for bigger screens */
+  }
+}

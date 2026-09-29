@@ -1,0 +1,155 @@
+.adminContainer {
+  padding: 20px;
+  width: 100%; /* Changed from fixed width to 100% */
+  max-width: 1200px; /* Add a max-width to prevent it from becoming too large */
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adminHeading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.carouselForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.fileLabel {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.fileInput {
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 800px; /* Add max-width to prevent it from being too large */
+}
+
+.submitButton {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 800px; /* Add max-width for larger screens */
+  padding: 10px 20px;
+  background-color: #5e5e5e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #343434;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: green;
+}
+
+.carouselContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.carouselItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deleteButton {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .adminHeading {
+    font-size: 1.8rem;
+  }
+
+  .fileLabel {
+    font-size: 1rem;
+  }
+
+  .fileInput {
+    width: 100%; /* Ensure input field is responsive */
+    max-width: 100%; /* Allow it to fill the width */
+  }
+
+  .submitButton {
+    width: 100%; /* Make submit button full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .adminHeading {
+    font-size: 1.5rem;
+  }
+
+  .fileLabel {
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+
+  .carouselImage {
+    height: auto; /* Reduce the image height for smaller screens */
+  }
+
+  .deleteButton {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}

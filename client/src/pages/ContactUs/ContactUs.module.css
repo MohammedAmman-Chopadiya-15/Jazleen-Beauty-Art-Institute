@@ -1,0 +1,327 @@
+/* .contactContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerImageDiv {
+  width: 100%;
+}
+
+.headerImage {
+  margin-top: 70px;
+  width: 100%;
+  align-self: auto;
+  height: 500px;
+  background-size: cover;
+}
+
+.overlay {
+  margin-top: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.pageName {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 5rem; 
+  z-index: 2;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+} */
+
+.navbarDiv {
+  position: relative;
+  z-index: 100;
+}
+
+.headerImageDiv {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.pageName {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.getintouchHeading {
+  padding: 20px;
+  margin: 50px 0px;
+  font-weight: 700;
+}
+
+.contactLeft {
+  width: 45%;
+}
+
+.whatsappsvg {
+  width: 30px;
+  height: 30px;
+}
+.contactLeftContentDiv {
+  padding-left: 80px;
+}
+
+.contactRight {
+  width: 50%;
+}
+
+.motivationalText {
+  padding: 30px 15px;
+  margin: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.motivationalIcon {
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 4rem;
+  vertical-align: middle;
+  animation: pulse 1.5s infinite;
+}
+
+.contactRight .formDiv {
+  height: 450px;
+  padding: 30px 15px;
+  margin: 60px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: slideUp 2s ease-out; /* Slide up animation for form */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between form fields */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in height calculations */
+}
+
+textarea {
+  resize: vertical; /* Allows users to manually resize the textarea vertically */
+  min-height: 100px; /* Adjust initial height, you can change the value */
+  max-height: 300px; /* Optional: Set a maximum height */
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #b0b0b0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.submitButton:hover {
+  background-color: #010101;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactInfo {
+  margin: 20px 0;
+}
+
+.contactDetails {
+  margin: 0px 0;
+  margin-left: 50px;
+}
+
+.contactDetailsStrong {
+  padding-top: 30px !important;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contactInfo svg {
+  margin-right: 10px;
+  font-size: 24px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mapContainerStyle {
+  border: 0;
+  width: 1200px;
+  height: 500px;
+}
+
+/* Specific styles for the iframe */
+.mapContainer {
+  margin: 60px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  border-radius: 5px;
+  overflow: hidden; /* Optional, for rounded corners effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+  .getintouchHeading {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+
+  .contactLeftContentDiv {
+    padding-left: 0%;
+  }
+
+  .headerImageDiv {
+    height: 100%;
+  }
+
+  .headerImage {
+    width: 100%;
+    height: 300px;
+  }
+
+  .categoryName {
+    font-size: 40px;
+    top: 30%;
+  }
+
+  .overlay {
+    height: 300px;
+  }
+
+  .contactRight .formDiv {
+    margin: 0px;
+  }
+
+  .contactContainer {
+    flex-direction: column; /* Stack items on smaller screens */
+    padding: 30px; /* Adjust padding */
+  }
+
+  .contactLeft,
+  .contactRight {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+    margin: 0px;
+    padding: 20px; /* Add space between sections */
+  }
+
+  .contactDetails {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .mapContainerStyle {
+    height: 300px;
+    width: 100%;
+  }
+
+  .mapContainer {
+    margin: 0px;
+  }
+
+  .contactDetailsStrong {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .submitButton {
+    width: 100%; /* Full width button */
+  }
+
+  .motivationalText {
+    margin-top: 0px;
+  }
+
+  .pageName {
+    font-size: 16px;
+    margin-top: 0px;
+    top: 60%;
+  }
+  .getintouchHeading {
+    font-size: 24px;
+    text-align: center;
+    padding: 0%;
+  }
+}
+
+

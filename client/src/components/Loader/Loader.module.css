@@ -1,0 +1,50 @@
+.loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    z-index: 9999; /* Ensure loader is above other elements */
+  }
+  
+  .loader {
+    position: relative; /* Set relative positioning for the spinner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image circular */
+    position: relative; /* Ensure the image stays on top */
+    z-index: 2; /* Bring image above the spinner */
+  }
+  
+  .spinner {
+    position: absolute; /* Position spinner absolutely */
+    width: 130px; /* Adjust size to be larger than the image */
+    height: 130px; /* Adjust size to be larger than the image */
+    border-radius: 50%; /* Make the container circular */
+    border: 3px solid transparent; /* Border thickness */
+    border-top-color: #000000; /* Color of the spinner line */
+    border-bottom-color: #000000; /* Color of the spinner line */
+    border-left-color: #000000; /* Color of the spinner line */
+    animation: spin 1s linear infinite; /* Continuous spinning animation */
+    z-index: 1; /* Ensure spinner is below the image */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+  

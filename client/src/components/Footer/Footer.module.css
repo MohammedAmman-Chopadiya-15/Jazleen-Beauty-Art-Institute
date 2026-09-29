@@ -1,0 +1,160 @@
+.footer {
+  border-top: 1px solid rgb(145, 143, 143);
+  text-align: center;
+  height: auto;
+  background-color: #000000 !important;
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.keepInTouch {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logoImg {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logoImg:hover {
+  transform: scale(1.1);
+}
+.company {
+  height: 150px;
+  margin-top: 30px;
+}
+
+.cousesLink {
+  margin-top: 10px;
+}
+
+.linkColumn {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.linksDivs {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 80px;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(198, 197, 197);
+  text-decoration: underline;
+}
+
+.socialLinks {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.socialLink {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.coursesLinks {
+  flex-direction: column;
+}
+
+.socialLink:hover {
+  transform: scale(1.2);
+}
+
+.instagram {
+  background: linear-gradient(
+    to right,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  ); /* Instagram gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  border: 1px solid transparent;
+}
+
+.linkedin {
+  color: #1da1f2;
+  border: 1px solid transparent;
+}
+
+.youtube {
+  color: #fd333d;
+  border: 1px solid transparent;
+}
+
+.whatsappsvg {
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    to right,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  ); /* Instagram gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  border: 1px solid white;
+}
+
+.youtube:hover {
+  color: #fd333d;
+  border: 1px solid white;
+}
+
+.linkedin:hover {
+  color: #1da1f2;
+  border: 1px solid white;
+}
+
+.copyright {
+  font-weight: 400;
+  background-color: #acacac;
+  color: black;
+  padding: 1rem;
+}
+
+.indiameterLink {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .linksDivs {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .cousesLink {
+    width: 100%;
+  }
+
+  .linksDivs {
+    flex-direction: column;
+  }
+}

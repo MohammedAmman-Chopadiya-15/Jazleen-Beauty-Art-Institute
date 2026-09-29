@@ -1,0 +1,113 @@
+.galleryContainer {
+  padding: 30px 10%;
+  background-color: #fff;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.eventGalleryHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 40px;
+  margin-top: -50px;
+  font-weight: bold;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.videoCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.videoCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.videoCard iframe {
+  width: 100%;
+  height: 180px;
+}
+
+.videoCard p {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #ff6b6b;
+  margin-top: 20px;
+}
+
+.promoVideoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 40px;
+
+}
+
+.promoVideo {
+  width: 100%;
+  height: auto; /* You can adjust the height as needed */
+  object-fit: cover;
+  height: 100vh;
+  border-radius: 40px;
+}
+
+/* arrow */
+.arrowBow {
+  margin: 0 10px;
+}
+
+.arrowBowleft {
+  transform: rotate(0deg); /* No rotation for left side */
+}
+
+.arrowBowright {
+  transform: rotate(180deg); /* Rotate 180 degrees for right side */
+}
+
+@media (max-width: 768px) {
+  .galleryContainer {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .videoCard iframe {
+    height: 180px;
+  }
+
+  .videoCard p {
+    padding: 15px;
+  }
+
+  .promoVideo {
+    height: auto;
+  }
+
+  .arrowBow {
+    display: none;
+  }
+
+  .eventGalleryHeading {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+}

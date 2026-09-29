@@ -1,0 +1,285 @@
+/* AdminCourses.module.css */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+}
+
+.formHeading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.formContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 98.5%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select option {
+  width: 100px;
+}
+
+.label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.helpLineText {
+  width: 100% !important;
+}
+.fileInput {
+  margin-bottom: 15px;
+  width: 98.5%;
+}
+
+.addButton {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: rgb(11, 130, 23);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+  width: 150px;
+}
+
+.addButton:hover {
+  background-color: rgb(3, 116, 15);
+}
+
+.deleteButton,
+.uploadedImageDelete {
+  margin-left: 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff0000;
+  border-radius: 5px;
+}
+
+.textAreaOuterDiv {
+  display: flex;
+}
+.deleteButtonTextArea {
+  margin: auto;
+}
+
+.deleteButton i,
+.uploadedImageDelete i {
+  transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+.deleteButton:hover i,
+.uploadedImageDelete:hover i {
+  font-weight: 900; /* Makes it solid (like fas) */
+  color: #d10000; /* Optional: slightly darker red on hover */
+}
+
+.submitButton {
+  padding: 10px 20px;
+  width: 96%;
+  background-color: #5e5e5e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: fixed;
+  left: 20px;
+  right: 0px; /* Position it at the bottom-right corner */
+  z-index: 100; /* Ensure it stays above other content */
+  bottom: 0.5%;
+}
+
+.submitButton:hover {
+  background-color: #343434;
+}
+
+.uploadedImagesContainer {
+  margin-top: 20px;
+}
+
+.uploadedImage {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 98%;
+}
+
+.uploadedImage span {
+  word-wrap: break-word; /* Break long words */
+  white-space: normal; /* Allow text to wrap */
+  overflow-wrap: break-word; /* Handle very long words gracefully */
+  display: inline-block; /* Ensure the span behaves like a block */
+  max-width: 100%; /* Prevent the text from overflowing its container */
+}
+
+.selectedImagePreview {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .inputField {
+    width: 90%;
+  }
+  .addButton,
+  .submitButton {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .submitButton {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Place it at the bottom of the screen on mobile */
+  }
+}
+
+.deleteCategoryButton,
+.addCategoryButton {
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(11, 130, 23);
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  width: 160px;
+}
+
+.deleteCategoryButton {
+  background-color: #d10000;
+}
+
+.dialog {
+  height: 300px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  width: 100%;
+  position: relative;
+  animation: slideDown 0.3s ease-out;
+  transform: translateY(-30px);
+}
+
+.dialogHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dialogTitle {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.dialogBody {
+  margin: 20px;
+}
+
+.dialogFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.okButton {
+  background-color: rgb(11, 130, 23);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+  width: 100px;
+}
+
+/* Animation for dialog appearance */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dialog {
+    padding: 15px;
+  }
+
+  .dialogTitle {
+    font-size: 1.3em;
+  }
+
+  .submitButton,
+  .cancelButton {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .label {
+    text-align: center;
+  }
+
+  .addCategoryButton,
+  .deleteCategoryButton {
+    width: 100%;
+  }
+
+  .dialogFooter {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,105 @@
+/* AdminLogin.module.css */
+
+.loginContainer {
+  margin: 15px auto; /* Center the container */
+  max-width: 600px; /* Set a max width for larger screens */
+  height: fit-content;
+  border: 1px solid white;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(161, 169, 193, 0.2);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.loginForm {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.loginHeading {
+  font-weight: 700;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  width: 100%; /* Adjusted to fill container */
+  height: 40px;
+  padding: 10px; /* Set left padding to 10px */
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+  font-weight: 600;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.formGroup input:hover {
+  background-color: rgba(234, 232, 232, 0.7);
+}
+
+.formGroup input:focus {
+  background-color: #ecedff98; /* Gray background on focus */
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Optional: Change border color on focus */
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #002a57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #03203f;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: red;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .loginContainer {
+    margin: 150px auto; /* Reduce margin for smaller screens */
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .companyLogo {
+    width: 100px; /* Adjust logo size for smaller screens */
+    height: 100px;
+  }
+
+  .submitButton {
+    font-size: 14px; /* Adjust button font size for smaller screens */
+  }
+}

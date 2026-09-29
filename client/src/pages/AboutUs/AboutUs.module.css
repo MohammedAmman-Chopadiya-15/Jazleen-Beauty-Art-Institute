@@ -1,0 +1,379 @@
+/* .aboutUsContainer {
+  position: relative;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left; 
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  background-color: white; 
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+  max-width: 1200px; 
+}
+
+.description {
+  font-size: 18px;
+  color: #333; 
+  line-height: 1.8; 
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff; 
+  border-left: 4px solid #ff0037; 
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.description:hover {
+  transform: translateY(-5px); 
+}
+ */
+/* .heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #ff0000;
+} */
+/*
+@media (max-width: 768px) {
+  .overlay {
+    padding: 30px 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}
+
+.element {
+  transition: transform 1s ease-out, opacity 0.6s ease-out;
+}
+
+.headerImageDiv {
+  width: 98.6vw;
+  height: 600px;
+}
+
+.overlaybanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.pageName {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 5rem;
+  z-index: 2;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 550px;
+}
+
+.aboutusP {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 30px;
+}
+
+.brandNameH1 {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  background: linear-gradient(
+    270deg,
+    #ff6a00,
+    #ee0979,
+    hsl(0, 100%, 33%),
+    #ff6a00,
+    #ee0979
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerImageDiv {
+    height: 300px;
+    width: 100%;
+  }
+  .headerImage {
+    height: 300px;
+    width: 100%;
+  }
+
+  .overlaybanner {
+    height: 300px !important;
+    width: 100%;
+  }
+
+  .pageName {
+    top: 30%;
+    width: 300px;
+  }
+
+  .aboutusP {
+    font-size: 16px;
+    margin-left: 180px;
+    margin-top: -40px;
+    width: 150px;
+  }
+
+  .brandNameH1 {
+    font-size: 26px;
+    top: 10%;
+  }
+
+  .overlaybanner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .aboutusP {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: -120px;
+  }
+
+  .brandNameH1 {
+    font-size: 50px;
+  }
+
+  .overlaybanner {
+    height: 100% !important;
+  }
+} */
+
+/* Navbar Container */
+.navbarDiv {
+  position: relative;
+  z-index: 2;
+}
+
+.brodiesFont {
+  font-family: "Brodies", sans-serif;
+}
+
+/* Header Image Section */
+.headerImageDiv {
+  position: relative;
+  width: 100%;
+  height: 650px; /* Adjust this as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlaybanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Banner dark overlay */
+  z-index: 1;
+}
+
+/* Banner Text */
+.pageName {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 5rem;
+  z-index: 2;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 550px;
+  z-index: 1;
+}
+
+.aboutusP {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.brandNameH1 {
+  font-size: 4rem;
+  background: linear-gradient(
+    270deg,
+    #ff6a00,
+    #ee0979,
+    hsl(0, 100%, 33%),
+    #ff6a00,
+    #ee0979
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.brandNameH1 span {
+  color: #f39c12; /* Highlight color for "Art Institute" */
+}
+
+@media (max-width: 1200px) {
+  .aboutusP {
+    font-size: 1rem;
+  }
+
+  .brandNameH1 {
+    font-size: 3rem;
+  }
+
+  .headerImageDiv,
+  .aboutUsContainer {
+    width: 100%;
+  }
+
+  .pageName {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    width: 250px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageName {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    width: 250px;
+    z-index: 1;
+  }
+
+  .aboutusP {
+    font-size: 0.9rem;
+  }
+
+  .brandNameH1 {
+    font-size: 3rem;
+  }
+
+  .headerImageDiv,
+  .aboutUsContainer {
+    width: 100%;
+  }
+}
+
+/* About Us Section */
+.aboutUsContainer {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: justify;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 4px solid #ff0037;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.description:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Overlay for About Us Content */
+.overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9); /* Subtle white overlay */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
